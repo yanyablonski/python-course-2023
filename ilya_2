@@ -1,0 +1,8 @@
+str1 = input().split()
+dict = {}
+for i in str1:
+    if i in dict:
+        print(f"{i}_{dict[i]}", end = " ")
+    else:
+        print(i, end = " ")
+    dict[i] = dict.get(i, 0) + 1
